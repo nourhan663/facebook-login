@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form{
+    max-width: 25em;
+}
+.main{
+    
+    height: 100vh;
+}
+input::placeholder{
+    font-size: .8em;
+}
+h1{
+    font-size: 4em;
+}
+input:focus-visible{
+    outline: none;
+    
+}
+
+.description{
+    width: 32em;
+    height: 16em;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:668px) and (max-width:992px) {
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .description{
+        text-align: center;
+        width: 28em;
+        margin-bottom: 2em;
+        margin-top: 5em;
+    }
+    
+}
+
+@media screen and (max-width:668px) {
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .description{
+        text-align: center;
+        max-width: 21em;
+        width: 100%;
+        margin-bottom: 2em;
+        margin-top: 5em;
+    }
+}
